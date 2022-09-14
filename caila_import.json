@@ -1,0 +1,129 @@
+{
+  "project" : {
+    "id" : "ivanovatest-727688-KbF",
+    "name" : "ivanovatest-727688-KbF",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "default"
+    },
+    "businessShared" : false,
+    "business" : false
+  },
+  "intents" : [ {
+    "id" : 446452,
+    "path" : "/Disagreement",
+    "enabled" : true,
+    "businessShared" : false,
+    "business" : false,
+    "phrases" : [ {
+      "text" : "Нет"
+    }, {
+      "text" : "Не хочу"
+    }, {
+      "text" : "Не буду"
+    }, {
+      "text" : "Не согласен"
+    }, {
+      "text" : "Не хочу играть"
+    }, {
+      "text" : "Не сыграем"
+    }, {
+      "text" : "Потом"
+    }, {
+      "text" : "Не сейчас"
+    }, {
+      "text" : "Не согласна"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 446454,
+    "path" : "/Game",
+    "enabled" : true,
+    "businessShared" : false,
+    "business" : false,
+    "phrases" : [ {
+      "text" : "Сыграем"
+    }, {
+      "text" : "Давай поиграем"
+    }, {
+      "text" : "Игра"
+    }, {
+      "text" : "Играть"
+    }, {
+      "text" : "хочу играть"
+    }, {
+      "text" : "хочу сыграть в игру"
+    }, {
+      "text" : "хочу поиграть"
+    }, {
+      "text" : "хочу поиграть в игру"
+    }, {
+      "text" : "игра угадай число"
+    }, {
+      "text" : "поиграть в игру угадай число"
+    } ],
+    "patterns" : [ ]
+  }, {
+    "id" : 446455,
+    "path" : "/Agreement",
+    "enabled" : true,
+    "businessShared" : false,
+    "business" : false,
+    "phrases" : [ {
+      "text" : "Да"
+    }, {
+      "text" : "Давай"
+    }, {
+      "text" : "Хочу"
+    }, {
+      "text" : "Давай поиграем уже"
+    }, {
+      "text" : "Давай сыграем уже"
+    }, {
+      "text" : "Давай уже играть"
+    }, {
+      "text" : "Начнем"
+    }, {
+      "text" : "Хорошо"
+    }, {
+      "text" : "Согласен"
+    }, {
+      "text" : "Согласна"
+    }, {
+      "text" : "Начинай"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "Number",
+      "entity" : "duckling.number",
+      "required" : true,
+      "prompts" : [ "Я загадал число. Есть догадки?", "Число загадано. Попробуй его угадать." ],
+      "array" : false,
+      "client" : false
+    } ]
+  }, {
+    "id" : 446453,
+    "path" : "/Number",
+    "enabled" : true,
+    "businessShared" : false,
+    "business" : false,
+    "phrases" : [ {
+      "text" : "@duckling.number"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "Number",
+      "entity" : "duckling.number",
+      "required" : true,
+      "prompts" : [ ]
+    } ]
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ]
+}
